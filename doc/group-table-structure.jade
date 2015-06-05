@@ -1,0 +1,56 @@
+//ember-table
+div.ember-table-tables-container height
+
+  //header-table-container
+  div.ember-table-header-container.ember-table-table-container.ember-table-fixed-table-container height width
+    div.ember-table-table-fixed-wrapper
+
+      //header-block (fixed)
+      div.ember-table-header-block.ember-table-table-block.ember-table-left-table-block width
+
+        //header-row -> multi-item-collection
+        div.ember-table-header-row.ember-table-table-row width
+          div.ember-view
+
+            //header-cell
+            div.ember-table-header-cell.ember-table-table-cell width height
+              div.ember-table-content-container
+                div.ember-table-content
+
+      //header-block
+      div.ember-table-header-block.ember-table-table-block.ember-table-right-table-block width
+
+        //header-row -> multi-item-collection
+        div.ember-table-header-row.ember-table-table-row width
+          div.ember-view
+
+            //header-cell
+            div.ember-table-header-cell.ember-table-table-cell width height
+              div.ember-table-content-container
+                div.ember-table-content
+
+  //body-table-container
+  div.ember-table-body-container.ember-table-table-container
+    div.antiscroll-box
+      div.antiscroll-inner width height
+        div.ember-table-table-scrollable-wrapper
+
+          //lazy-table-block -> lazy-container
+          div.ember-table-lazy-list-container.ember-table-table-block.ember-table-right-table-block height width
+
+            //table-row -> multi-item-collection
+            div.ember-table-table-row width height top
+              div.ember-view width
+
+                //table-cell
+                div.ember-table-cell width
+
+          //lazy-table-block -> lazy-container
+          div.ember-table-lazy-list-container.ember-table-table-block.ember-table-right-table-block height width
+
+            //table-row -> multi-item-collection
+            div.ember-table-table-row width height top
+              div.ember-view width
+
+                //table-cell
+                div.ember-table-cell width
