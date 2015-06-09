@@ -17,17 +17,20 @@ div.ember-table-tables-container height
               div.ember-table-content-container
                 div.ember-table-content
 
-      //header-block
-      div.ember-table-header-block.ember-table-table-block.ember-table-right-table-block width
+      //header-groups-block
+      div.ember-table-header-groups-block.ember-table-table-block.ember-table-right-table-block width
 
-        //header-row -> multi-item-collection
-        div.ember-table-header-row.ember-table-table-row width
-          div.ember-view
+        //header-group
+        div.ember-table-header-block.ember-table-table-block.ember-table-right-table-block sortable width
 
-            //header-cell
-            div.ember-table-header-cell.ember-table-table-cell width height
-              div.ember-table-content-container
-                div.ember-table-content
+          //header-row -> multi-item-collection
+          div.ember-table-header-row.ember-table-table-row width height top
+            div.ember-view
+
+              //header-cell
+              div.ember-table-header-cell.ember-table-table-cell width height
+                div.ember-table-content-container
+                  div.ember-table-content
 
   //body-table-container
   div.ember-table-body-container.ember-table-table-container
